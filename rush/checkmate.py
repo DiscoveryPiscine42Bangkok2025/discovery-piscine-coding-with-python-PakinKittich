@@ -23,11 +23,10 @@ def checkmate(board_str):
 
         kx, ky = king_pos
 
-        # ------------------ Helper functions ------------------ #
         def in_bounds(x, y):
             return 0 <= x < n and 0 <= y < n
 
-        # Pawn (attacks diagonally forward, assuming pawns go downward)
+        # Pawn
         pawn_moves = [(1, -1), (1, 1)]
         for dx, dy in pawn_moves:
             x, y = kx + dx, ky + dy

@@ -9,7 +9,7 @@ R...
     checkmate(board1)  # Expected: Success
 
     board2 = """\
-B.
+P.
 .K"""
     checkmate(board2)  # Expected: Fail
 
